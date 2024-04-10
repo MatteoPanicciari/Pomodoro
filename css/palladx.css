@@ -1,0 +1,66 @@
+.box-orario{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.box-timer{
+    grid-template-areas: 
+    'serie serie'
+        'alfa-mancanti beta-mancanti'
+        'percentuale percentuale';
+    grid-template-rows: 2fr 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
+    
+    display: none;
+}
+
+.orario{
+    width: auto;
+    height: auto;
+
+    font-variant: small-caps;   /*mette tutte lettere maiuscole*/
+    color: var(--bg);
+
+    font-weight: 900;       /*spessore font*/
+    font-size: min(6vh, 6vw);
+
+    margin:auto;
+}
+
+.alfa-mancanti{ grid-area: alfa-mancanti; }
+.beta-mancanti{ grid-area: beta-mancanti; }
+.percentuale{ grid-area: percentuale; }
+.serie{ grid-area: serie; }
+
+.serie,.percentuale,.beta-mancanti,.alfa-mancanti{
+    width: auto;
+    height: auto;
+
+    font-variant: small-caps;   /*mette tutte lettere maiuscole*/
+    color: var(--bg);
+
+    font-weight: 900;       /*spessore font*/
+    font-size: min(4vh, 4vw);
+
+    margin:auto;
+}
+
+.serie{
+    margin-top: min(4vh, 4vw);
+}
+
+.percentuale{
+    margin-bottom: min(4vh, 4vw);
+}
+
+.beta-mancanti{
+    margin-left: 1px;
+    font-size: min(5vh, 5vw);
+}
+
+.alfa-mancanti{
+    font-size: min(10vh, 10vw);
+    margin: auto;
+    margin-right: 1px;;
+}

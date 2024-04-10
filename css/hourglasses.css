@@ -1,0 +1,401 @@
+.hourglass1{
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: var(--fluid);
+
+    border-bottom: 3px solid var(--fborder);
+    border-left: 3px solid var(--fborder);
+    border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;        /* raggi orizzontali / raggi verticali */
+
+    height: 30vh;
+    width: 49.5vw;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0.5vw;
+}
+
+.hourglass2{
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: var(--fluid);
+
+    border-bottom: 3px solid var(--fborder);
+    border-right: 3px solid var(--fborder);
+    border-radius: 0% 0% 100% 0% / 0% 0% 100% 0%;        /* raggi orizzontali / raggi verticali */
+
+    height: 30vh;
+    width: 49.5vw;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0.5vw;
+    margin-left: 0;
+}
+
+.hourglass3{
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: var(--fluid);
+
+    border-bottom: 0px solid var(--fborder);
+    border-left: 0px solid var(--fborder);
+    border-radius: 100% 0% 0% 0% / 100% 0% 0% 0%;        /* raggi orizzontali / raggi verticali */
+
+    height: 0;
+    width: 10vw;
+
+    margin-top: 30vh;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 40vw;
+}
+
+.hourglass4{
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: var(--fluid);
+
+    border-bottom: 0px solid var(--fborder);
+    border-right: 0px solid var(--fborder);
+    border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;        /* raggi orizzontali / raggi verticali */
+
+    height: 0;
+    width: 10vw;
+
+    margin-top: 30vh;
+    margin-bottom: 0;
+    margin-right: 40vw;
+    margin-left: 0;
+}
+  
+@keyframes diminuisci1 { 
+    0% {
+        height: 30vh;
+        width: 49.5vw;
+
+        border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+    30% {
+        border-bottom: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        width: 49.5vw;
+
+        margin-top: 0;
+        margin-bottom: 9vh;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+    100% {
+        border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 0px solid var(--fborder);
+        border-left: 0px solid var(--fborder);
+
+        height: 0;
+        width: 10vw;
+
+        margin-top: 0;
+        margin-bottom: 30vh;
+        margin-right: 0;
+        margin-left: 40vw;
+    }
+}
+  
+@keyframes diminuisci2 { 
+    0% {
+        height: 30vh;
+        width: 49.5vw;
+
+        border-radius: 0% 0% 100% 0% / 0% 0% 100% 0%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+    30% {
+        border-bottom: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        width: 49.5vw;
+
+        margin-top: 0;
+        margin-bottom: 9vh;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+    100% {
+        border-radius: 0% 0% 100% 0% / 0% 0% 100% 0%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 0px solid var(--fborder);
+        border-right: 0px solid var(--fborder);
+
+        height: 0;
+        width: 10vw;
+
+        margin-top: 0;
+        margin-bottom: 30vh;
+        margin-right: 40vw;
+        margin-left: 0;
+    }
+}
+  
+@keyframes aumenta3 { 
+    0% {
+        border-radius: 100% 0% 0% 0% / 100% 0% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 0px solid var(--fborder);
+        border-left: 0px solid var(--fborder);
+
+        height: 0.5vh;
+        width: 10vw;
+
+        margin-top: 29.5vh;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 40vw;
+    }
+    70% {
+        border-top: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        width: 49.5vw;
+        height: 20.9vh;
+
+        margin-top: 9.1vh;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+    100% {
+        border-radius: 100% 0% 0% 0% / 100% 0% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        height: 30vh;
+        width: 49.5vw;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+}
+  
+@keyframes aumenta4 { 
+    0% {
+        border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 0px solid var(--fborder);
+        border-right: 0px solid var(--fborder);
+
+        height: 0.5vh;
+        width: 10vw;
+
+        margin-top: 29.5vh;
+        margin-bottom: 0;
+        margin-right: 40vw;
+        margin-left: 0;
+    }
+    70% {
+        border-top: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        width: 49.5vw;
+        height: 20.9vh;
+
+        margin-top: 9.1vh;
+        margin-bottom: 0;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+    100% {
+        border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        height: 30vh;
+        width: 49.5vw;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+}
+  
+
+  
+@keyframes aumenta1 { 
+    0% {
+        border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 0px solid var(--fborder);
+        border-left: 0px solid var(--fborder);
+
+        height: 0;
+        width: 10vw;
+
+        margin-top: 0;
+        margin-bottom: 29.5vh;
+        margin-right: 0;
+        margin-left: 40vw;
+    }
+    70% {
+        border-bottom: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        width: 49.5vw;
+        height: 20.9vh;
+
+        margin-top: 0;
+        margin-bottom: 9.1vh;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+    100% {
+        height: 30vh;
+        width: 49.5vw;
+
+        border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+}
+  
+@keyframes aumenta2 { 
+    0% {
+        border-radius: 0% 0% 100% 0% / 0% 0% 100% 0%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 0px solid var(--fborder);
+        border-right: 0px solid var(--fborder);
+
+        height: 0;
+        width: 10vw;
+
+        margin-top: 0;
+        margin-bottom: 29.5vh;
+        margin-right: 40vw;
+        margin-left: 0;
+    }
+    70% {
+        border-bottom: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        width: 49.5vw;
+        height: 20.9vh;
+
+        margin-top: 0;
+        margin-bottom: 9.1vh;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+    100% {
+        height: 30vh;
+        width: 49.5vw;
+
+        border-radius: 0% 0% 100% 0% / 0% 0% 100% 0%;        /* raggi orizzontali / raggi verticali */
+        border-bottom: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+}
+  
+@keyframes diminuisci3 { 
+    0% {
+        border-radius: 100% 0% 0% 0% / 100% 0% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        height: 30vh;
+        width: 49.5vw;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+    30% {
+        border-top: 3px solid var(--fborder);
+        border-left: 3px solid var(--fborder);
+
+        width: 49.5vw;
+
+        margin-top: 9vh;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0.5vw;
+    }
+    100% {
+        border-radius: 100% 0% 0% 0% / 100% 0% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 0px solid var(--fborder);
+        border-left: 0px solid var(--fborder);
+
+        height: 0;
+        width: 10vw;
+
+        margin-top: 30vh;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 40vw;
+    }
+}
+  
+@keyframes diminuisci4 { 
+    0% {
+        border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        height: 30vh;
+        width: 49.5vw;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+    30% {
+        border-top: 3px solid var(--fborder);
+        border-right: 3px solid var(--fborder);
+
+        width: 49.5vw;
+
+        margin-top: 9vh;
+        margin-bottom: 0;
+        margin-right: 0.5vw;
+        margin-left: 0;
+    }
+    100% {
+        border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;        /* raggi orizzontali / raggi verticali */
+        border-top: 0px solid var(--fborder);
+        border-right: 0px solid var(--fborder);
+
+        height: 0;
+        width: 10vw;
+
+        margin-top: 30vh;
+        margin-bottom: 0;
+        margin-right: 40vw;
+        margin-left: 0;
+    }
+}

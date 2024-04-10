@@ -1,0 +1,92 @@
+:root {
+    --bg: #2f3e46;
+    --txt: #cad2c5;
+    --fluid: #ffbb99;
+    --fborder: #ff5500;
+    --other1: #52796f;
+    --fred: #ff1a1a;
+    --fborderred: #ff8080;
+    --other: #84a98c;
+    /*
+    
+    e poi quando finisce fai verde, il problema sta nella goccia che cade perche non ce l'ho che va da 0 a 100%*/
+  }
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    z-index: -1;
+    font-family: 'Lora', sans-serif;
+}
+
+#main{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    grid-template-areas:
+        'areaalto1 areaalto1 areaalto2 areaalto2'
+        'areapallasx areaflusso areaflusso areapalladx'
+        'areabasso1 areabasso1 areabasso2 areabasso2';
+    border: 0px;
+    margin: 0px;
+    gap:0px;
+    padding:0px;
+    grid-template-columns: 98fr 2fr 2fr 98fr;
+    grid-template-rows: 3fr 4fr 3fr;
+    background-color: var(--bg);
+}
+
+.grid-container > div{ box-sizing: border-box; }
+
+.alto1{ grid-area: areaalto1;}
+.alto2{ grid-area: areaalto2;}
+.basso1{ grid-area: areabasso1; }
+.basso2{ grid-area: areabasso2; }
+.alto1, .alto2,
+.basso1, .basso2{ 
+    height: 30vh;
+    width: 50vw;
+}
+
+.flusso {
+    box-sizing: border-box;
+    grid-area: areaflusso;
+    height: 40vh;
+    width: 2vw;
+    border: 0px;
+    margin: 0px;
+    gap:0px;
+    padding:0px;
+}
+
+.pallasx{
+    height: 40vh;
+    width: 49vw;
+    grid-area: areapallasx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.palladx{
+    height: 40vh;
+    width: 49vw;
+    grid-area: areapalladx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-orario,
+.box-timer,
+.box-newtimer,
+.box-menu{
+    height: min(35vh, 35vw);
+    width: min(35vh, 35vw);
+    border-radius: 50%;
+    background-color: var(--txt);
+    display: grid;
+    border: 4px solid var(--other);
+}

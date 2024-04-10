@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer Pomodoro</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+
+        <link rel="stylesheet" href="css/pomodoro.css">
+        <link rel="stylesheet" href="css/hourglasses.css">
+        <link rel="stylesheet" href="css/drops.css">
+        <link rel="stylesheet" href="css/pallasx.css">
+        <link rel="stylesheet" href="css/palladx.css">
+    </head>
+    <body>
+        <div class="grid-container" id="main">  
+            <div class="alto1">
+                <div class="hourglass1"></div>
+            </div>
+            <div class="alto2">
+                <div class="hourglass2"></div>
+            </div>
+            <div class="pallasx">
+                <form class="box-newtimer" id="studyForm">
+                        <p class="titolo">Nuovo<br>Pomodoro</p>
+                        <p class="did-inserie">Numero di Serie: </p>
+                        <input class="inserie" id="nserie" type="number" min="1" value="1" required>
+                        <p class="did-inpomodoro">Durata Pomodoro (min): </p>
+                        <input class="inpomodoro" id="dpomodoro" type="number" min="1" value="25" required>
+                        <p class="did-inpausa">Durata Pausa (min): </p>
+                        <input class="inpausa" id="dpausa" type="number" min="1" value="0" readonly required>
+                        <button type="submit" class="submit">Conferma</button>
+                    </form>
+                <div class="box-menu">
+                    <p class="titolo">Timer<br>Pomodoro</p>
+                    <button type="button" class="bpausa" id="bquit">Pausa</button>
+                    <button type="button" class="bnuovo" onclick="location.reload()">Nuovo</button>
+                </div>
+            </div>
+            <div class="flusso"> 
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="lastdrop"></div>
+            </div>
+            <div class="palladx">
+                <div class="box-orario">
+                    <p class="orario" id="orario">-- : -- : --</p>
+                </div>
+                <div class="box-timer">
+                    <p class="serie" id="serie">Serie:  -/-</p>
+                    <p class="alfa-mancanti" id="alfa-mancanti">--</p> <!--DEBUG: DA CANCELLARE I CONTENUTI DE STI div-->
+                    <p class="beta-mancanti" id="beta-mancanti">--</p> <!--DEBUG: DA CANCELLARE I CONTENUTI DE STI div-->
+                    <p class="percentuale" id="percentuale">--%</p>
+                </div>
+            </div>
+            <div class="basso1">
+                <div class="hourglass3"></div>
+            </div>
+            <div class="basso2">
+                <div class="hourglass4"></div>
+            </div>
+        </div>
+        <script src="pomodoro.js"></script>
+    </body>
+</html>
