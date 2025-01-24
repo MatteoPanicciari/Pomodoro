@@ -1,3 +1,3 @@
 # Github Pages
 
-https://matteopanicciari.github.io/pomodoro/pomodoro.html
+https://matteopanicciari.github.io/Pomodoro/pomodoro.html
